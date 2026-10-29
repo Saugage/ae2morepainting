@@ -1,0 +1,18 @@
+{
+  "package": "com.ae2morepainting.mixins",
+  "refmap": "mixins.ae2morepainting.refmap.json",
+  "target": "@env(DEFAULT)",
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "required": true,
+  "mixins": [
+    "MixinAEBaseTileBlock",
+    "MixinBlockController",
+    "MixinBlockDrive",
+    "MixinColorableInvTiles",
+    "MixinTileController",
+    "MixinTileFluidInterface"
+  ],
+  "client": [],
+  "server": []
+}
