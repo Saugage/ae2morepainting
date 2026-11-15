@@ -11,14 +11,21 @@ import zone.rong.mixinbooter.ILateMixinLoader;
 public class LateMixinLoader implements ILateMixinLoader {
 
     private static final String AE2FC_CONFIG = "mixins." + Tags.MODID + ".ae2fc.json";
+    private static final String AE2QOLEXTRAS_CONFIG = "mixins." + Tags.MODID + ".ae2qolextras.json";
 
     @Override
     public List<String> getMixinConfigs() {
-        return Arrays.asList("mixins." + Tags.MODID + ".json", AE2FC_CONFIG);
+        return Arrays.asList("mixins." + Tags.MODID + ".json", AE2FC_CONFIG, AE2QOLEXTRAS_CONFIG);
     }
 
     @Override
     public boolean shouldMixinConfigQueue(final String mixinConfig) {
-        return !AE2FC_CONFIG.equals(mixinConfig) || Loader.isModLoaded(Compat.AE2FC_MODID);
+        if (AE2FC_CONFIG.equals(mixinConfig)) {
+            return Loader.isModLoaded(Compat.AE2FC_MODID);
+        }
+        if (AE2QOLEXTRAS_CONFIG.equals(mixinConfig)) {
+            return Loader.isModLoaded(Compat.AE2QOLEXTRAS_MODID);
+        }
+        return true;
     }
 }

@@ -61,6 +61,13 @@ public final class ColoredModelEvents {
             COLORED_TEXTURES.add(new TextureFolder("dual_interface", Compat.AE2FC_MODID, "interface",
                     "interface_alternate", "interface_alternate_arrow"));
         }
+
+        if (Compat.isAE2QoLExtrasLoaded()) {
+            COLORED_MODELS.add(Compat.AE2QOLEXTRAS_MODID + ":spatial_link_chamber");
+            COLORED_TEXTURES.add(new TextureFolder("spatial_link_chamber", Compat.AE2QOLEXTRAS_MODID,
+                    "spatial_link_chamber", "spatial_link_chamber_side", "spatial_link_chamber_front",
+                    "spatial_link_chamber_front_full", "spatial_link_chamber_bottom"));
+        }
     }
 
     /** Base sprite name to colored sprites, indexed by {@link AEColor#ordinal()}. */

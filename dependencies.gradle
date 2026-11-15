@@ -45,4 +45,8 @@ dependencies {
     // Optional: AE2 Fluid Crafting Rework Unofficial (mod id: ae2fc) v2.7.11-unofficial, for colored dual interfaces
     // https://github.com/Circulate233/AE2FluidCraft-Rework-Unofficial/releases/tag/2.7.11-unofficial
     devOnlyNonPublishable rfg.deobf(project.files("libs/ae2fc-2.7.11-unofficial.jar"))
+
+    // Optional: AE2UEL QOL Extras (mod id: ae2qolextras) v1.0.0
+    // https://www.curseforge.com/minecraft/mc-mods/ae2uel-qol-extras/files/9554866
+    devOnlyNonPublishable rfg.deobf("curse.maven:ae2uel-qol-extras-1797897:9554866")
 }
