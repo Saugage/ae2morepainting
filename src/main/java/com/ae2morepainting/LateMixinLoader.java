@@ -3,7 +3,7 @@ package com.ae2morepainting;
 import java.util.Arrays;
 import java.util.List;
 
-import net.minecraftforge.fml.common.Loader;
+import org.apache.logging.log4j.LogManager;
 
 import zone.rong.mixinbooter.ILateMixinLoader;
 
@@ -21,11 +21,20 @@ public class LateMixinLoader implements ILateMixinLoader {
     @Override
     public boolean shouldMixinConfigQueue(final String mixinConfig) {
         if (AE2FC_CONFIG.equals(mixinConfig)) {
-            return Loader.isModLoaded(Compat.AE2FC_MODID);
+            return shouldQueue(mixinConfig, "AE2FC", Compat.isAE2FCLoaded(), Compat.isAE2FCEnabled());
         }
         if (AE2QOLEXTRAS_CONFIG.equals(mixinConfig)) {
-            return Loader.isModLoaded(Compat.AE2QOLEXTRAS_MODID);
+            return shouldQueue(mixinConfig, "AE2UEL QOL Extras", Compat.isAE2QoLExtrasLoaded(),
+                    Compat.isAE2QoLExtrasEnabled());
         }
         return true;
+    }
+
+    private static boolean shouldQueue(final String mixinConfig, final String name, final boolean loaded,
+            final boolean enabled) {
+        if (loaded && !enabled) {
+            LogManager.getLogger(Tags.MODID).info("{} integration disabled by config; skipping {}", name, mixinConfig);
+        }
+        return enabled;
     }
 }

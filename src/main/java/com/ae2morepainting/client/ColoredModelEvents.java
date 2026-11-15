@@ -56,13 +56,13 @@ public final class ColoredModelEvents {
         COLORED_TEXTURES.add(new TextureFolder("drive", AE2_MODID, "drive_side", "drive_top", "drive_bottom",
                 "drive_front", "drive_inside"));
 
-        if (Compat.isAE2FCLoaded()) {
+        if (Compat.isAE2FCEnabled()) {
             COLORED_MODELS.add(Compat.AE2FC_MODID + ":dual_interface");
             COLORED_TEXTURES.add(new TextureFolder("dual_interface", Compat.AE2FC_MODID, "interface",
                     "interface_alternate", "interface_alternate_arrow"));
         }
 
-        if (Compat.isAE2QoLExtrasLoaded()) {
+        if (Compat.isAE2QoLExtrasEnabled()) {
             COLORED_MODELS.add(Compat.AE2QOLEXTRAS_MODID + ":spatial_link_chamber");
             COLORED_TEXTURES.add(new TextureFolder("spatial_link_chamber", Compat.AE2QOLEXTRAS_MODID,
                     "spatial_link_chamber", "spatial_link_chamber_side", "spatial_link_chamber_front",

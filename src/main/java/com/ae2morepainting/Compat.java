@@ -17,4 +17,12 @@ public final class Compat {
     public static boolean isAE2QoLExtrasLoaded() {
         return Loader.isModLoaded(AE2QOLEXTRAS_MODID);
     }
+
+    public static boolean isAE2FCEnabled() {
+        return isAE2FCLoaded() && ModConfig.isAE2FCIntegrationEnabled();
+    }
+
+    public static boolean isAE2QoLExtrasEnabled() {
+        return isAE2QoLExtrasLoaded() && ModConfig.isAE2QoLExtrasIntegrationEnabled();
+    }
 }
