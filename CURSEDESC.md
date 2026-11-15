@@ -6,12 +6,6 @@ Components Currently Supported: controller, drive, interface, fluid interface, a
 
 - Gregtech CEu causes the recolored drives to be invisible, Vintage Fix fixes this
 
-## Adding/Removing the mod
-
-- You can add the mod to your world!
-- When the mod is removed, the painted components will just turn back into their fluix variants
-- Make sure to create backups of your world when adding stuff!
-
 ## Dependencies
 
 - [AE2 Unofficial Extended Life](https://github.com/AE2-UEL)- v0.56.7
@@ -20,7 +14,7 @@ Components Currently Supported: controller, drive, interface, fluid interface, a
 ### Optional Dependencies
 
 - [AE2 Fluid Crafting Rework Unofficial](https://github.com/Circulate233/AE2FluidCraft-Rework-Unofficial)- v2.7.10
-- [AE2UEL QOL Extras](https://www.curseforge.com/minecraft/mc-mods/ae2uel-qol-extras)- v1.0.0
+- [AE2UEL QOL Extras](https://www.curseforge.com/minecraft/mc-mods/ae2uel-qol-extras)- v1.0.1
 
 ## Credits
 
@@ -28,7 +22,7 @@ The idea of colorable controllers, drives, and interfaces is not original, but i
 
 The textures are modified versions of the default [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) textures, which is under LGPL-3.0.
 
-The textures of [ae2qolextras](https://github.com/Saugage/ae2uelqolextras) are modified versions from the mod, under GPL-3.0.
+The textures of [ae2qolextras](https://github.com/Saugage/ae2uelqolextras) are modified versions from the original mod, under GPL-3.0.
 
 ## Development Notes
 

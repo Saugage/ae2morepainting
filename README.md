@@ -33,7 +33,7 @@ The idea of colorable controllers, drives, and interfaces is not original, but i
 
 The textures are modified versions of the default [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) textures, which is under LGPL-3.0.
 
-The textures of [ae2qolextras](https://github.com/Saugage/ae2uelqolextras) are modified versions from the mod, under GPL-3.0.
+The textures of [ae2qolextras](https://github.com/Saugage/ae2uelqolextras) are modified versions from the original mod, under GPL-3.0.
 
 ## Development Notes
 
