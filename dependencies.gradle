@@ -42,6 +42,10 @@ dependencies {
     // https://github.com/AE2-UEL/Applied-Energistics-2
     implementation rfg.deobf("curse.maven:ae2-extended-life-570458:6302098")
 
+    // ModularUI (mod id: modularui) v3.1.6, for the Color Applicator GUI
+    // https://github.com/CleanroomMC/ModularUI
+    implementation rfg.deobf("curse.maven:modularui-624243:7929464")
+
     // Optional: AE2 Fluid Crafting Rework Unofficial (mod id: ae2fc) v2.7.11-unofficial, for colored dual interfaces
     // https://github.com/Circulate233/AE2FluidCraft-Rework-Unofficial/releases/tag/2.7.11-unofficial
     devOnlyNonPublishable rfg.deobf(project.files("libs/ae2fc-2.7.11-unofficial.jar"))

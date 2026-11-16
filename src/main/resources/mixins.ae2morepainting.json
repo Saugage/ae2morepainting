@@ -6,6 +6,7 @@
   "compatibilityLevel": "JAVA_8",
   "required": true,
   "mixins": [
+    "AccessorToolColorApplicator",
     "MixinAEBaseTileBlock",
     "MixinBlockController",
     "MixinBlockDrive",

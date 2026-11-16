@@ -4,6 +4,8 @@ Adds the ability to paint more AE2 Components to [AE2UEL](https://github.com/AE2
 
 Components Currently Supported: controller, drive, interface, fluid interface, ae2fc dual interface, IO port, ae2qolextras spatial link chamber.
 
+Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. Access it by right-clicking air.
+
 Component showcase as of 1.0:
 ![texture example](examples/example.png "Showcase")
 
@@ -20,6 +22,7 @@ Spatial Link Chambers!:
 ## Dependencies
 
 - [AE2 Unofficial Extended Life](https://github.com/AE2-UEL)- v0.56.7
+- [ModularUI](https://github.com/CleanroomMC/ModularUI)- v3.1.6
 - Requires MixinBooter
 
 ### Optional Dependencies
@@ -29,7 +32,7 @@ Spatial Link Chambers!:
 
 ## Credits
 
-The idea of colorable controllers, drives, and interfaces is not original, but is ported from [AE2-Unofficial GTNH fork](https://github.com/GTNewHorizons/Applied-Energistics-2-Unofficial/tree/master), which is under LGPL-3.0.
+The idea of colorable controllers, colorable drives, colorable interfaces, and a color applicator GUI is not original, but is ported from [AE2-Unofficial GTNH fork](https://github.com/GTNewHorizons/Applied-Energistics-2-Unofficial/tree/master), which is under LGPL-3.0.
 
 The textures are modified versions of the default [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) textures, which is under LGPL-3.0.
 

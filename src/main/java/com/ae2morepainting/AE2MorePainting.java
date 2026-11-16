@@ -15,8 +15,10 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.ae2morepainting.gui.ColorApplicatorGuiFactory;
+
 @Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME,
-     acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:appliedenergistics2;required-after:mixinbooter;after:ae2fc;after:ae2qolextras")
+     acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:appliedenergistics2;required-after:mixinbooter;required-after:modularui;after:ae2fc;after:ae2qolextras")
 public class AE2MorePainting {
 
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
@@ -26,6 +28,7 @@ public class AE2MorePainting {
     public void preInit(FMLPreInitializationEvent event) {
         // register to the event bus so that we can listen to events
         MinecraftForge.EVENT_BUS.register(this);
+        ColorApplicatorGuiFactory.register();
         LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
     }
 
