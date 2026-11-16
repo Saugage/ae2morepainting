@@ -2,6 +2,8 @@ Adds the ability to paint more AE2 Components to [AE2UEL](https://github.com/AE2
 
 Components Currently Supported: controller, drive, interface, fluid interface, ae2fc dual interface, IO port, ae2qolextras spatial link chamber.
 
+Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. Access it by right-clicking air. Additionally, with the color applicator in the offhand, all colorable blocks from this addon will be automatically colored.
+
 ## Strange issues with other mods
 
 - Gregtech CEu causes the recolored drives to be invisible, Vintage Fix fixes this
@@ -9,6 +11,7 @@ Components Currently Supported: controller, drive, interface, fluid interface, a
 ## Dependencies
 
 - [AE2 Unofficial Extended Life](https://github.com/AE2-UEL)- v0.56.7
+- [ModularUI](https://github.com/CleanroomMC/ModularUI)- v3.1.6
 - Required MixinBooter
 
 ### Optional Dependencies
@@ -18,7 +21,7 @@ Components Currently Supported: controller, drive, interface, fluid interface, a
 
 ## Credits
 
-The idea of colorable controllers, drives, and interfaces is not original, but is ported from [AE2-Unofficial GTNH fork](https://github.com/GTNewHorizons/Applied-Energistics-2-Unofficial/tree/master), which is under LGPL-3.0.
+The idea of colorable controllers, colorable drives, colorable interfaces, and a color applicator GUI is not original, but is ported from [AE2-Unofficial GTNH fork](https://github.com/GTNewHorizons/Applied-Energistics-2-Unofficial/tree/master), which is under LGPL-3.0.
 
 The textures are modified versions of the default [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) textures, which is under LGPL-3.0.
 
