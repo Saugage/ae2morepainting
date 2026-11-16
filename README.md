@@ -15,6 +15,9 @@ Use case:
 Spatial Link Chambers!:
 ![spatial link chambers](examples/spatiallinkchambers.png "Wow!")
 
+Color Applicator GUI:
+![color applicator gui](examples/colorapplicatorgui.png "So amazing!")
+
 ## Strange issues with other mods
 
 - Gregtech CEu causes the recolored drives to be invisible, Vintage Fix fixes this
