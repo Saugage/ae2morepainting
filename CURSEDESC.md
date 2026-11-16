@@ -12,7 +12,7 @@ Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. 
 
 - [AE2 Unofficial Extended Life](https://github.com/AE2-UEL)- v0.56.7
 - [ModularUI](https://github.com/CleanroomMC/ModularUI)- v3.1.6
-- Required MixinBooter
+- Requires MixinBooter
 
 ### Optional Dependencies
 
