@@ -4,7 +4,7 @@ Adds the ability to paint more AE2 Components to [AE2UEL](https://github.com/AE2
 
 Components Currently Supported: controller, drive, interface, fluid interface, ae2fc dual interface, IO port, ae2qolextras spatial link chamber.
 
-Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. Access it by right-clicking air.
+Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. Access it by right-clicking air. With the color applicator in the offhand, all colorable blocks from this mod will be automatically colored.
 
 Component showcase as of 1.0:
 ![texture example](examples/example.png "Showcase")
