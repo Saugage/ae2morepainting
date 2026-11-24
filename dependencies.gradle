@@ -57,4 +57,8 @@ dependencies {
     // Optional: CrazyAE (mod id: crazyae), for colored improved drives
     // https://www.curseforge.com/minecraft/mc-mods/crazyae/files/6840104
     devOnlyNonPublishable rfg.deobf("curse.maven:crazyae-1111042:6840104")
+
+    // Optional: The One Probe (mod id: theoneprobe) 1.12-1.4.28
+    // https://www.curseforge.com/minecraft/mc-mods/the-one-probe/files/2667280
+    devOnlyNonPublishable rfg.deobf("curse.maven:the-one-probe-245211:2667280")
 }

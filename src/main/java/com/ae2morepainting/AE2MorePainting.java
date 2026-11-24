@@ -8,6 +8,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
@@ -18,7 +19,7 @@ import org.apache.logging.log4j.Logger;
 import com.ae2morepainting.gui.ColorApplicatorGuiFactory;
 
 @Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME,
-     acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:appliedenergistics2;required-after:mixinbooter;required-after:modularui;after:ae2fc;after:ae2qolextras;after:crazyae")
+     acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:appliedenergistics2;required-after:mixinbooter;required-after:modularui;after:ae2fc;after:ae2qolextras;after:crazyae;after:theoneprobe")
 public class AE2MorePainting {
 
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
@@ -29,6 +30,10 @@ public class AE2MorePainting {
         // register to the event bus so that we can listen to events
         MinecraftForge.EVENT_BUS.register(this);
         ColorApplicatorGuiFactory.register();
+        if (Compat.isTOPEnabled()) {
+            FMLInterModComms.sendFunctionMessage(Compat.TOP_MODID, "getTheOneProbe",
+                    "com.ae2morepainting.top.TOPCompat$GetTheOneProbe");
+        }
         LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
     }
 

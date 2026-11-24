@@ -19,6 +19,7 @@ Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. 
 - [AE2 Fluid Crafting Rework Unofficial](https://github.com/Circulate233/AE2FluidCraft-Rework-Unofficial)- v2.7.10
 - [AE2UEL QOL Extras](https://www.curseforge.com/minecraft/mc-mods/ae2uel-qol-extras)- v1.0.1
 - [CrazyAE](https://www.curseforge.com/minecraft/mc-mods/crazyae)- v0.6.0.2
+- [The One Probe](https://www.curseforge.com/minecraft/mc-mods/the-one-probe)- v1.4.28
 
 ### Other Version Compatibility
 

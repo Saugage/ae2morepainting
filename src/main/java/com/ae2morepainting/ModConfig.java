@@ -18,6 +18,7 @@ public final class ModConfig {
     private static boolean ae2qolextrasIntegration = true;
     private static boolean crazyaeImprovedDrive = true;
     private static boolean crazyaeImprovedIOPort = true;
+    private static boolean topIntegration = true;
 
     private ModConfig() {}
 
@@ -41,6 +42,11 @@ public final class ModConfig {
         return crazyaeImprovedIOPort;
     }
 
+    public static boolean isTOPIntegrationEnabled() {
+        load();
+        return topIntegration;
+    }
+
     private static synchronized void load() {
         if (loaded) {
             return;
@@ -61,6 +67,8 @@ public final class ModConfig {
                 "Enable CrazyAE integration (improved drive).");
         crazyaeImprovedIOPort = config.getBoolean("enableCrazyAEImprovedIOPort", CATEGORY_INTEGRATIONS, true,
                 "Enable CrazyAE integration (improved IO port).");
+        topIntegration = config.getBoolean("enableTheOneProbeIntegration", CATEGORY_INTEGRATIONS, true,
+                "Enable The One Probe integration (shows component color).");
 
         if (config.hasChanged()) {
             config.save();
