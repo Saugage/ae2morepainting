@@ -35,7 +35,7 @@ The textures are modified versions of the default [Applied Energistics 2](https:
 
 The textures of [ae2qolextras](https://github.com/Saugage/ae2uelqolextras) are modified versions from the original mod, under GPL-3.0.
 
-The improved drive textures are modified versions from [CrazyAE](https://github.com/beecupbe/crazyae).
+The improved drive textures are modified versions from [CrazyAE](https://github.com/beecupbe/crazyae), under MIT.
 
 ## Development Notes
 
