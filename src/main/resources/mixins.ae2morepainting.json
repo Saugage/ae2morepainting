@@ -12,7 +12,8 @@
     "MixinBlockDrive",
     "MixinColorableInvTiles",
     "MixinTileController",
-    "MixinTileFluidInterface"
+    "MixinTileFluidInterface",
+    "MixinToolColorApplicator"
   ],
   "client": [],
   "server": []

@@ -6,6 +6,8 @@ Components Currently Supported: controller, drive, interface, fluid interface, A
 
 Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. Access it by right-clicking air. Additionally, with the color applicator in the offhand, all colorable blocks from this addon will be automatically colored.
 
+The color applicator's storage capacity can be changed with the `colorApplicatorBytes` option in `config/ae2morepainting.cfg`.
+
 Component showcase as of 1.0:
 ![texture example](examples/example.png "Showcase")
 

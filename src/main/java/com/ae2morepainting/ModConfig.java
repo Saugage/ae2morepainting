@@ -11,9 +11,11 @@ import net.minecraftforge.fml.common.Loader;
  */
 public final class ModConfig {
 
+    private static final String CATEGORY_GENERAL = "general";
     private static final String CATEGORY_INTEGRATIONS = "integrations";
 
     private static boolean loaded;
+    private static int colorApplicatorBytes = 512;
     private static boolean ae2fcIntegration = true;
     private static boolean ae2qolextrasIntegration = true;
     private static boolean crazyaeImprovedDrive = true;
@@ -21,6 +23,11 @@ public final class ModConfig {
     private static boolean topIntegration = true;
 
     private ModConfig() {}
+
+    public static int getColorApplicatorBytes() {
+        load();
+        return colorApplicatorBytes;
+    }
 
     public static boolean isAE2FCIntegrationEnabled() {
         load();
@@ -55,6 +62,11 @@ public final class ModConfig {
 
         final Configuration config = new Configuration(new File(Loader.instance().getConfigDir(), Tags.MODID + ".cfg"));
         config.load();
+        config.setCategoryComment(CATEGORY_GENERAL, "General settings.");
+
+        colorApplicatorBytes = config.getInt("colorApplicatorBytes", CATEGORY_GENERAL, 512, 8, Integer.MAX_VALUE,
+                "Total byte capacity of the AE2 Color Applicator's internal storage.");
+
         config.setCategoryComment(CATEGORY_INTEGRATIONS,
                 "Toggles for optional mod integrations.");
         config.setCategoryRequiresMcRestart(CATEGORY_INTEGRATIONS, true);
