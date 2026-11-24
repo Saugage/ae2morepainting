@@ -68,6 +68,12 @@ public final class ColoredModelEvents {
                     "spatial_link_chamber", "spatial_link_chamber_side", "spatial_link_chamber_front",
                     "spatial_link_chamber_front_full", "spatial_link_chamber_bottom"));
         }
+
+        if (Compat.isCrazyAEEnabled()) {
+            COLORED_MODELS.add(Compat.CRAZYAE_MODID + ":improved_drive");
+            COLORED_TEXTURES.add(new TextureFolder("improved_drive", Compat.CRAZYAE_MODID, "block",
+                    new String[] { "driveimp_side", "driveimp_top", "driveimp_bottom", "driveimp_front" }));
+        }
     }
 
     /** Base sprite name to colored sprites, indexed by {@link AEColor#ordinal()}. */
@@ -92,7 +98,7 @@ public final class ColoredModelEvents {
                     }
                 }
                 if (any) {
-                    COLORED_SPRITES.put(folder.namespace + ":blocks/" + base, sprites);
+                    COLORED_SPRITES.put(folder.namespace + ":" + folder.baseDir + "/" + base, sprites);
                 }
             }
         }
@@ -134,11 +140,18 @@ public final class ColoredModelEvents {
 
         final String folder;
         final String namespace;
+        /** Directory of the base textures inside the owning mod's textures, e.g. {@code blocks} for AE2. */
+        final String baseDir;
         final String[] bases;
 
         TextureFolder(final String folder, final String namespace, final String... bases) {
+            this(folder, namespace, "blocks", bases);
+        }
+
+        TextureFolder(final String folder, final String namespace, final String baseDir, final String[] bases) {
             this.folder = folder;
             this.namespace = namespace;
+            this.baseDir = baseDir;
             this.bases = bases;
         }
     }

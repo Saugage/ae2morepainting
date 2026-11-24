@@ -12,10 +12,11 @@ public class LateMixinLoader implements ILateMixinLoader {
 
     private static final String AE2FC_CONFIG = "mixins." + Tags.MODID + ".ae2fc.json";
     private static final String AE2QOLEXTRAS_CONFIG = "mixins." + Tags.MODID + ".ae2qolextras.json";
+    private static final String CRAZYAE_CONFIG = "mixins." + Tags.MODID + ".crazyae.json";
 
     @Override
     public List<String> getMixinConfigs() {
-        return Arrays.asList("mixins." + Tags.MODID + ".json", AE2FC_CONFIG, AE2QOLEXTRAS_CONFIG);
+        return Arrays.asList("mixins." + Tags.MODID + ".json", AE2FC_CONFIG, AE2QOLEXTRAS_CONFIG, CRAZYAE_CONFIG);
     }
 
     @Override
@@ -26,6 +27,9 @@ public class LateMixinLoader implements ILateMixinLoader {
         if (AE2QOLEXTRAS_CONFIG.equals(mixinConfig)) {
             return shouldQueue(mixinConfig, "AE2UEL QOL Extras", Compat.isAE2QoLExtrasLoaded(),
                     Compat.isAE2QoLExtrasEnabled());
+        }
+        if (CRAZYAE_CONFIG.equals(mixinConfig)) {
+            return shouldQueue(mixinConfig, "CrazyAE", Compat.isCrazyAELoaded(), Compat.isCrazyAEEnabled());
         }
         return true;
     }

@@ -1,6 +1,6 @@
 Adds the ability to paint more AE2 Components to [AE2UEL](https://github.com/AE2-UEL). This may be useful because components with different colors do not connect, even if they are next to eachother.
 
-Components Currently Supported: controller, drive, interface, fluid interface, ae2fc dual interface, IO port, ae2qolextras spatial link chamber.
+Components Currently Supported: controller, drive, interface, fluid interface, AE2FC dual interface, IO port, AE2QOLExtras spatial link chamber, CrazyAE improved drive.
 
 Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. Access it by right-clicking air. Additionally, with the color applicator in the offhand, all colorable blocks from this addon will be automatically colored.
 
@@ -18,6 +18,7 @@ Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. 
 
 - [AE2 Fluid Crafting Rework Unofficial](https://github.com/Circulate233/AE2FluidCraft-Rework-Unofficial)- v2.7.10
 - [AE2UEL QOL Extras](https://www.curseforge.com/minecraft/mc-mods/ae2uel-qol-extras)- v1.0.1
+- [CrazyAE](https://www.curseforge.com/minecraft/mc-mods/crazyae)- v0.6.0.2
 
 ### Other Version Compatibility
 
@@ -30,6 +31,8 @@ The idea of colorable controllers, colorable drives, colorable interfaces, and a
 The textures are modified versions of the default [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) textures, which is under LGPL-3.0.
 
 The textures of [ae2qolextras](https://github.com/Saugage/ae2uelqolextras) are modified versions from the original mod, under GPL-3.0.
+
+The improved drive textures are modified versions from [CrazyAE](https://github.com/beecupbe/crazyae).
 
 ## Development Notes
 

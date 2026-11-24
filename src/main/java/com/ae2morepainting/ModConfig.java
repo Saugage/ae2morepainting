@@ -16,6 +16,7 @@ public final class ModConfig {
     private static boolean loaded;
     private static boolean ae2fcIntegration = true;
     private static boolean ae2qolextrasIntegration = true;
+    private static boolean crazyaeImprovedDrive = true;
 
     private ModConfig() {}
 
@@ -27,6 +28,11 @@ public final class ModConfig {
     public static boolean isAE2QoLExtrasIntegrationEnabled() {
         load();
         return ae2qolextrasIntegration;
+    }
+
+    public static boolean isCrazyAEImprovedDriveEnabled() {
+        load();
+        return crazyaeImprovedDrive;
     }
 
     private static synchronized void load() {
@@ -45,6 +51,8 @@ public final class ModConfig {
                 "Enable the ae2fc integration (dual interface).");
         ae2qolextrasIntegration = config.getBoolean("enableAE2QoLExtrasIntegration", CATEGORY_INTEGRATIONS, true,
                 "Enable ae2qolextras integration (spatial link chamber).");
+        crazyaeImprovedDrive = config.getBoolean("enableCrazyAEImprovedDrive", CATEGORY_INTEGRATIONS, true,
+                "Enable CrazyAE integration (improved drive).");
 
         if (config.hasChanged()) {
             config.save();

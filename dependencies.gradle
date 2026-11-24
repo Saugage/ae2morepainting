@@ -53,4 +53,8 @@ dependencies {
     // Optional: AE2UEL QOL Extras (mod id: ae2qolextras) v1.0.0
     // https://www.curseforge.com/minecraft/mc-mods/ae2uel-qol-extras/files/9554866
     devOnlyNonPublishable rfg.deobf("curse.maven:ae2uel-qol-extras-1797897:9554866")
+
+    // Optional: CrazyAE (mod id: crazyae), for colored improved drives
+    // https://www.curseforge.com/minecraft/mc-mods/crazyae/files/6840104
+    devOnlyNonPublishable rfg.deobf("curse.maven:crazyae-1111042:6840104")
 }

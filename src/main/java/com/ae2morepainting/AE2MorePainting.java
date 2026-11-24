@@ -18,7 +18,7 @@ import org.apache.logging.log4j.Logger;
 import com.ae2morepainting.gui.ColorApplicatorGuiFactory;
 
 @Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME,
-     acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:appliedenergistics2;required-after:mixinbooter;required-after:modularui;after:ae2fc;after:ae2qolextras")
+     acceptedMinecraftVersions = "[1.12.2]", dependencies = "required-after:appliedenergistics2;required-after:mixinbooter;required-after:modularui;after:ae2fc;after:ae2qolextras;after:crazyae")
 public class AE2MorePainting {
 
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
