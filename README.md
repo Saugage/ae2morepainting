@@ -2,7 +2,7 @@
 
 Adds the ability to paint more AE2 Components to [AE2UEL](https://github.com/AE2-UEL). This may be useful because components with different colors do not connect, even if they are next to eachother.
 
-Components Currently Supported: controller, drive, interface, fluid interface, AE2FC dual interface, IO port, AE2QOLExtras spatial link chamber, CrazyAE improved drive.
+Components Currently Supported: controller, drive, interface, fluid interface, AE2FC dual interface, IO port, AE2QOLExtras spatial link chamber, CrazyAE improved drive, CrazyAE improved IO port.
 
 Also adds a GUI to the color applicator similar to GTNH's color applicator GUI. Access it by right-clicking air. Additionally, with the color applicator in the offhand, all colorable blocks from this addon will be automatically colored.
 

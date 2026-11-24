@@ -69,10 +69,17 @@ public final class ColoredModelEvents {
                     "spatial_link_chamber_front_full", "spatial_link_chamber_bottom"));
         }
 
-        if (Compat.isCrazyAEEnabled()) {
+        if (Compat.isCrazyAEImprovedDriveEnabled()) {
             COLORED_MODELS.add(Compat.CRAZYAE_MODID + ":improved_drive");
             COLORED_TEXTURES.add(new TextureFolder("improved_drive", Compat.CRAZYAE_MODID, "block",
                     new String[] { "driveimp_side", "driveimp_top", "driveimp_bottom", "driveimp_front" }));
+        }
+
+        if (Compat.isCrazyAEImprovedIOPortEnabled()) {
+            COLORED_MODELS.add(Compat.CRAZYAE_MODID + ":improved_io_port");
+            COLORED_TEXTURES.add(new TextureFolder("improved_io_port", Compat.CRAZYAE_MODID, "block",
+                    new String[] { "io_portimp", "io_portimp_off", "io_portimp_side", "io_portimp_side_off",
+                            "io_port_bottom" }));
         }
     }
 

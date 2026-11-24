@@ -31,7 +31,11 @@ public final class Compat {
         return isAE2QoLExtrasLoaded() && ModConfig.isAE2QoLExtrasIntegrationEnabled();
     }
 
-    public static boolean isCrazyAEEnabled() {
+    public static boolean isCrazyAEImprovedDriveEnabled() {
         return isCrazyAELoaded() && ModConfig.isCrazyAEImprovedDriveEnabled();
+    }
+
+    public static boolean isCrazyAEImprovedIOPortEnabled() {
+        return isCrazyAELoaded() && ModConfig.isCrazyAEImprovedIOPortEnabled();
     }
 }

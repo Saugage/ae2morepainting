@@ -12,11 +12,13 @@ public class LateMixinLoader implements ILateMixinLoader {
 
     private static final String AE2FC_CONFIG = "mixins." + Tags.MODID + ".ae2fc.json";
     private static final String AE2QOLEXTRAS_CONFIG = "mixins." + Tags.MODID + ".ae2qolextras.json";
-    private static final String CRAZYAE_CONFIG = "mixins." + Tags.MODID + ".crazyae.json";
+    private static final String CRAZYAE_DRIVE_CONFIG = "mixins." + Tags.MODID + ".crazyae.drive.json";
+    private static final String CRAZYAE_IOPORT_CONFIG = "mixins." + Tags.MODID + ".crazyae.ioport.json";
 
     @Override
     public List<String> getMixinConfigs() {
-        return Arrays.asList("mixins." + Tags.MODID + ".json", AE2FC_CONFIG, AE2QOLEXTRAS_CONFIG, CRAZYAE_CONFIG);
+        return Arrays.asList("mixins." + Tags.MODID + ".json", AE2FC_CONFIG, AE2QOLEXTRAS_CONFIG,
+                CRAZYAE_DRIVE_CONFIG, CRAZYAE_IOPORT_CONFIG);
     }
 
     @Override
@@ -28,8 +30,13 @@ public class LateMixinLoader implements ILateMixinLoader {
             return shouldQueue(mixinConfig, "AE2UEL QOL Extras", Compat.isAE2QoLExtrasLoaded(),
                     Compat.isAE2QoLExtrasEnabled());
         }
-        if (CRAZYAE_CONFIG.equals(mixinConfig)) {
-            return shouldQueue(mixinConfig, "CrazyAE", Compat.isCrazyAELoaded(), Compat.isCrazyAEEnabled());
+        if (CRAZYAE_DRIVE_CONFIG.equals(mixinConfig)) {
+            return shouldQueue(mixinConfig, "CrazyAE improved drive", Compat.isCrazyAELoaded(),
+                    Compat.isCrazyAEImprovedDriveEnabled());
+        }
+        if (CRAZYAE_IOPORT_CONFIG.equals(mixinConfig)) {
+            return shouldQueue(mixinConfig, "CrazyAE improved IO port", Compat.isCrazyAELoaded(),
+                    Compat.isCrazyAEImprovedIOPortEnabled());
         }
         return true;
     }
